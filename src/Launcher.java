@@ -7,6 +7,6 @@
  */
 public class Launcher {
     public static void main(String[] args) {
-        System.out.println(PermuteString.permute("abc"));
+        System.out.println(new String(ReverseCharArray.reverseCStyle("abcd\0".toCharArray())));
     }
 }
