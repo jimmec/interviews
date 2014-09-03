@@ -31,4 +31,8 @@ public class PermuteString {
         }
         return fullPerms;
     }
+
+    public static void main(String[] args) {
+        System.out.println(PermuteString.permute("abc"));
+    }
 }
