@@ -1,3 +1,5 @@
+import solutions.ReverseCharArray;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Administrator

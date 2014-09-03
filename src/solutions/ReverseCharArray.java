@@ -1,3 +1,5 @@
+package solutions;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Administrator
@@ -16,5 +18,9 @@ public class ReverseCharArray {
         output[len-1] = 0;
 
         return output;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(new String(ReverseCharArray.reverseCStyle("abcd\0".toCharArray())));
     }
 }
