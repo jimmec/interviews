@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -9,14 +10,14 @@ import java.util.List;
  * To change this template use File | Settings | File Templates.
  */
 public class PermuteString {
-    public static String[] permute(String str) {
+    public static List<String> permute(String str) {
         // Base case
         if (str.length() < 2) {
-            return new String[] {str};
+            return Arrays.asList(str);
         }
 
         String firstChar = str.substring(0,1);
-        String[] perms = permute(str.substring(1));
+        List<String> perms = permute(str.substring(1));
         List<String> fullPerms = new ArrayList<String>();
         for (String perm: perms) {
             // Insert the remaining charater at each possible position
@@ -26,7 +27,6 @@ public class PermuteString {
                 fullPerms.add(fullPerm.toString());
             }
         }
-        String[] result = new String[str.length() * fullPerms.size()];
-        return fullPerms.toArray(result);
+        return fullPerms;
     }
 }
