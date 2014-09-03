@@ -7,7 +7,7 @@ import java.util.List;
  * User: Administrator
  * Date: 02/09/14
  * Time: 5:23 PM
- * To change this template use File | Settings | File Templates.
+ * return all permutations of a given string.
  */
 public class PermuteString {
     public static List<String> permute(String str) {
