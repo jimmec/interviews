@@ -1,4 +1,4 @@
-import solutions.ReverseCharArray;
+import solutions.ArraysAndStrings.ReverseCharArray;
 
 /**
  * Created with IntelliJ IDEA.
